@@ -1,0 +1,72 @@
+.first-layer {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  /* background-color: red; */
+}
+
+.second-layer {
+  z-index: 1;
+
+  width: 100vh;
+  position: absolute;
+  height: 100vh;
+}
+
+#page3,
+#page2 {
+  z-index: 3;
+}
+
+#blur {
+  height: 355px;
+  width: 355px;
+  background-color: #7fa21e;
+  position: fixed;
+  opacity: 0.5;
+  border-radius: 45%;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+#cursor {
+  height: 20px;
+  width: 20px;
+  background-color: #95c11e;
+  position: fixed;
+
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.pad30 {
+  padding: 0px 130px;
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 1235px) {
+  #page1 h1 {
+    font-size: 5rem;
+  }
+
+  #page2-center p {
+    margin: 0px 0px;
+    font-size: 0.7rem;
+  }
+
+  #page2-left img {
+    width: 150px;
+    height: 180px;
+  }
+
+  #page2-center > span {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+  }
+}
