@@ -5,7 +5,7 @@ var blur = document.querySelector("#blur");
 
 
 document.addEventListener('mousemove', function (dets) {
-    console.log(dets.x)
+    // console.log(dets.x)
     cur.style.left = dets.x + "px";
     cur.style.top = dets.y + "px";
 

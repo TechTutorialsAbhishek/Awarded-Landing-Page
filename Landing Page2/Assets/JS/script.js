@@ -35,3 +35,104 @@ function locomotive() {
 
 locomotive()
 
+function project() {
+    let fixedImage = document.getElementById('fixed-image');
+    console.log(fixedImage)
+    let elem_container = document.getElementById('elem-container')
+
+
+    elem_container.addEventListener('mouseenter', function (dets) {
+        fixedImage.style.display = "block";
+
+    })
+
+    elem_container.addEventListener('mouseleave', function (dets) {
+        fixedImage.style.display = "none";
+
+    })
+
+
+
+    var elem = document.querySelectorAll('.elem')
+
+    // console.log(elem)
+
+    elem.forEach(function (dets) {
+        dets.addEventListener('mouseenter', function () {
+            var image = dets.getAttribute("data-image");
+            console.log(image)
+            fixedImage.style.backgroundImage = `url(${image})`
+        })
+    })
+
+    // $ template litterals
+
+
+
+}
+
+project();
+
+
+
+let b = document.querySelectorAll('.h2-left')
+let page5Right = document.getElementById('right-image')
+
+function faa() {
+
+    b.forEach(function (BgImg) {
+    console.log(BgImg.getAttribute('data-bg'))
+
+
+        BgImg.addEventListener('click', function () {
+            let images = BgImg.getAttribute('data-bg')
+            console.log(images)
+           page5Right.style.background = `url(${images})`
+
+
+
+
+            // page5Right.style.backgroundColor = "green"
+    
+
+        })
+    })
+
+
+
+
+
+
+
+
+}
+
+faa()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// right - image
+
+
+//     .addEventListener('click', function () {
+//     page5Image.forEach(image, function (hh) {
+//       console.log(hh)
+//   })
+// })
+
+
+
+

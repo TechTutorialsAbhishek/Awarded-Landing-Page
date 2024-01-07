@@ -334,7 +334,7 @@ p {
 }
 
 #box-img1 {
-  background-image: url("../Assets/Image/card1.avif");
+  background-image: url("../Assets/Image/card1.webp");
 }
 
 #box-img2 {
@@ -342,7 +342,7 @@ p {
 }
 
 #box-img3 {
-  background-image: url("../Assets/Image/card3.avif");
+  background-image: url("../Assets/Image/card3.webp");
 }
 
 .overlay {
