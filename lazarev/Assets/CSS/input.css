@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: NHaasLight;
+  src: url('../Fonts/NHaasGroteskTXPro-55Rg.ttf');
+}
+
+
+.font-Nhass-Light{
+  font-family: NHaasLight;
+}
+
+
+@font-face {
+  font-family: NHaasBold;
+  src: url('../Fonts/NHaasGroteskTXPro-75Bd.ttf');
+}
+
+
+.font-NhassBold{
+  font-family: NHaasBold;
+}

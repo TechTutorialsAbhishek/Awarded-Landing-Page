@@ -1,0 +1,207 @@
+nav{
+    transition: all ease-in-out 0.5s;
+}
+
+
+nav {
+   z-index: 99; 
+}
+
+
+nav #nav-part2  a:hover , li:hover{
+    cursor: pointer;
+    color: gray;
+}
+   
+nav #nav-part2 ol{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ font-weight:300;
+ color: white;
+}
+
+
+
+
+
+#page1 {
+    width: 100vw;
+    height: 100vh;
+
+  
+}
+
+
+
+#page1 h2 svg{
+    width: 7vw;
+  
+    height: fit-content;
+    margin-bottom: 4vh;
+}
+
+#page1:nth-child(1){
+    font-size: 8.5vw;
+}
+
+
+#page1_top {
+  margin-bottom: 9vh;
+}
+
+#page1_top h2{
+    line-height: 85px;
+}
+
+
+#page1_bottom {
+ margin-bottom: 10vh;
+    
+}
+
+nav ol li{
+  width: 100px;
+  height: 18px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+nav ol li p{
+
+
+
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 15px);
+
+}
+
+
+
+
+/* nav ol li::after{
+  position: absolute;
+content: "";
+width: 60px;
+top: 20%;
+left: 20%;
+height: 20px;
+background-color: red;
+ 
+ }
+  */
+
+
+
+#page1_bottom p{
+    padding: 10px 0px;
+    
+}
+
+#page1_bottom span{
+    padding: 10px 4px;
+    border-radius: 65px;
+    border: 2px solid gray;
+
+}
+
+
+
+
+#top_nav ol li:hover{
+color: gray; 
+}
+
+
+ol li ol{
+    margin-top: 5vh;
+    background-color: red;
+}
+
+
+
+  
+  @media screen and (max-width: 786px){
+    #page1 h2 svg{
+        width: 7vw;
+      
+        height: fit-content;
+        margin-bottom: 1vh;
+    }
+  }
+
+ 
+
+  #nav-part2 ol{
+    margin-top: 5vh;
+  }
+
+
+
+/* pAGE2 start */
+  /* #page2{
+    
+  } */
+  #page2__Part1 > #slider img{
+    width: 80px;
+    height: fit-content;
+    /* mix-blend-mode: darken; */
+    object-fit: contain;
+
+  }
+
+  #page2__Part1  #slider-in{
+     animation: LogoMover 15s infinite 2s linear ;
+     overflow-x: none;
+     overflow-y: none;
+    transition: all ease-in-out 0.5s;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     /* background-color: aquamarine; */
+  }
+
+  @keyframes LogoMover {
+    to{
+      transform: translateX(-30%);
+    }from{
+      transform: translateX(30%);
+    }
+    
+  }
+
+  /* #page2__Part2{
+
+  }
+*/
+#page2_Part2_left{
+border-top: 2.1px solid gray;
+  } 
+
+  #page2_Part2_right .elem{
+
+   width: 100%;
+  height: 200px;
+padding: 12px 5px;
+border-top: 2.1px solid gray;
+
+  }
+
+  #page2_Part2_right .elem h2{
+
+font-size: 1.8rem;
+ font-weight: 500;
+ margin-top: 12px;
+   }
+  #page2_Part2_right .elem:hover{
+    /* background-color: aqua; */
+    transition: all ease-in 0.1s;
+ 
+border-top: 2.1px solid wheat;
+
+  }
+
+
+  /* pAGE2 start end */

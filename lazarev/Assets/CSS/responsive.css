@@ -1,0 +1,25 @@
+
+@media screen and (min-width:1022px){
+    #bars{
+        display: none;
+    }
+ 
+}
+
+
+@media screen and (max-width:1022px){
+ 
+    #page2_Part2_right .elem{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 280px;
+justify-content: center;
+     
+       }
+       #page2_Part2_right .elem h2{
+
+        font-size: 1.5rem;
+        
+    }
+}
