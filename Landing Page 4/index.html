@@ -1,153 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./Assets/CSS/style.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-            rel="stylesheet" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div id="cursor"></div>
-        <nav>
-            <div id="nav-part1">
-                <img
-                    src="https://web.archive.org/web/20231202174235im_/https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg"
-                    alt srcset>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Duo Studio</title>
+  </head>
+  <body>
+    <div id="cursor"></div>
+
+    <nav>
+      <div id="nav-part1">
+        <img
+          src="https://web.archive.org/web/20231202174235im_/https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg"
+          alt
+          srcset
+        />
+      </div>
+      <div id="nav-part2">
+        <ol>
+          <li>Home</li>
+          <li>Work</li>
+          <li>Service</li>
+          <li>Studio</li>
+          <li>Journal</li>
+          <li>Contact</li>
+        </ol>
+      </div>
+      <div id="nav-part3">
+        <i class="ri-circle-fill" id="circle2"></i>
+        <i class="ri-circle-fill" id="circle1"></i>
+      </div>
+    </nav>
+
+    <main>
+      <div class="outerbox"></div>
+
+      <div class="innerbox"></div>
+
+      <div id="page1">
+        <div>
+          <h2 class="h2-left">A design studio made</h2>
+          <h2 class="h2-right">to element your brand</h2>
+        </div>
+        <p>
+          We build brand identities, creative websites, and visual <br />
+          narratives that showcase the full extent of your potential.<br />
+          Based in Washington DC,working with clients world-wide.
+        </p>
+        <video
+          src="./Assets/Video/Duo Reel--Desktop-reduced.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+      </div>
+
+      <div id="page2">
+        <span id="page2__heading">
+          <div id="Heading__first_line">
+            <p>
+              <small style="font-size: 2rem;">CapabilitiesAT</small> DUO STUDIO,
+              WE HAVE A
+            </p>
+          </div>
+          <div id="Heading__second_line">
+            <p>PASSION FOR CRAFTING PERSONALIZED</p>
+          </div>
+          <div id="Heading__third_line"><p>SOLUTIONS, INCLUDING:</p></div>
+        </span>
+        <div id="page2__Container">
+          <div id="page2_left">
+            <div class="elem">
+              <img src="./Assets/Image/services__branding@1152.webp" alt="" class="a">
+              <h2>Branding</h2>
+              <p>
+                Brand Identity, Brand Strategy, Logo <br />
+                Design, Messaging, Positioning, Art <br />
+                Direction, Brand Guidelines
+              </p>
+              <button>Expand</button>
             </div>
-            <div id="nav-part2">
-                <ol>
-                    <li>Home</li>
-                    <li>Work</li>
-                    <li>Service</li>
-                    <li>Studio</li>
-                    <li>Journal</li>
-                    <li>Contact</li>
-                </ol>
+            <div class="elem">
+              <img src="./Assets/Image/services__content@1152.webp" alt="" class="a">
+              <h2>Websites</h2>
+              <p>
+                Web Design, Web Development, UI/UX, <br />
+                Wireframes, Copywriting, E-Commerce, <br />
+                SEO, CMS, Analytics/Tracking
+              </p>
+              <button>Expand</button>
             </div>
-            <div id="nav-part3">
-                <i class="ri-circle-fill" id="circle2"></i>
-                <i class="ri-circle-fill" id="circle1"></i>
-
+            <div class="elem">
+              <img src="./Assets/Image/services__websites@1152.webp" alt="" class="a">
+              <h2>Content</h2>
+              <p>
+                Content Strategy, Graphic Design, <br />
+                Marketing Design Collateral, Packaging, <br />
+                Print Design, Illustration, Motion Graphics
+              </p>
+              <button>Expand</button>
             </div>
-        </nav>
+          </div>
+          <div id="page2_right"></div>
+        </div>
+      </div>
 
-        <main>
-            <div class="outerbox">
+      <div id="page3">
+        <div id="page3-part1">
+          <h2>
+            Featured <br />
+            work
+          </h2>
+          <div class="img-wrapper" data-scroll data-scroll-speed="3">
+            <img
+              src="https://web.archive.org/web/20240215162227im_/https://duo-studio.co/assets/home/home__mgny-thumbnail.webp"
+              alt
+              srcset
+            />
+            <h3>MGNY</h3>
+            <p>Brand Strategy, Website, Creative Direction, Illustration</p>
+          </div>
 
+          <div class="video-wrapper absolute" data-scroll data-scroll-speed="3">
+            <video
+              src="./Assets/Video/projects_cruefilms-reduced.mp4"
+              muted
+              autoplay
+              loop
+            ></video>
+            <h3>Cruefilms</h3>
+            <p>Brand Strategy, Website</p>
+          </div>
+        </div>
+        <div id="page3-part2">
+          <div
+            class="video-wrapper absolute right0"
+            data-scroll
+            data-scroll-speed="-2"
+          >
+            <video
+              src="./Assets/Video/projects_madegood-reduced.mp4"
+              muted
+              autoplay
+              loop
+            ></video>
+            <h3>MGNY</h3>
+            <p>Brand Strategy, Website, Creative Direction, Illustration</p>
+          </div>
+
+          <div class="img-wrapper" data-scroll data-scroll-speed="1">
+            <img
+              src="./Assets/Image/home-casestudy-finturity.webp"
+              alt
+              srcset
+            />
+            <h3>MGNY</h3>
+            <p>Brand Strategy, Website, Creative Direction, Illustration</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page4">
+        <div class="line"></div>
+        <div id="page4__part1">
+          <h2>
+            Beyond logos & <br />
+            creative websites
+          </h2>
+          <div class="circle">
+            <h4>Start a Project</h4>
+          </div>
+        </div>
+        <div id="page4__part2">
+         <div class="scroller" >
+          <div class="box">
+            <button>001</button>
+            <h2>
+              WE CONNECT YOUR <br />
+              BRAND WITH PEOPLE
+            </h2>
+            <p>
+              A powerful brand has the power to move the hearts and minds of
+              many. Through the combination of brand identity, brand
+              positioning, and storytelling, our aim is to create impactful
+              experiences that become an integral part of people’s lives.
+            </p>
+          </div>
+          <div class="box">
+            <button>002</button>
+            <h2>
+              WE STRATEGIZE FIRST <br />
+              WHEN BUILDING A BRAND
+            </h2>
+            <p>
+              Content is king, and we're masters in building custom,
+              from-scratch content to drive impactful results. We pair
+              compelling narratives with graphic design to amplify your brand's
+              message across various channels.
+            </p>
+          </div>
+          <div class="box">
+            <button>003</button>
+            <h2>
+              WE BUILD INTERACTIVE, USER- <br />
+              FIRST DIGITAL EXPERIENCES
+            </h2>
+            <p>
+              At the center of every successful project is data-driven research
+              and a brand strategy framework. Through collaborative workshops,
+              we take a deep-dive into your business, audience, and market to
+              define a roadmap that inspires action.
+            </p>
+          </div>
+          <div class="box">
+            <button>004</button>
+            <h2>
+              WE CREATE INTENTIONAL <br />
+              CONTENT THAT CONVERTS
+            </h2>
+            <p>
+              We don’t just build websites; we build growth-driven digital
+              experiences that meet people where they are. Every element, from
+              the web design to the web development is fine-tuned to give your
+              customers an immersive journey from their first click.
+            </p>
+          </div>
+         </div>
+        </div>
+      </div>
+
+      <div id="page5">
+        
+        <div id="page5__part1">
+          <h3>MENTIONS CLIENTS</h3>
+          <button>View
+            Clients</button> 
+        
+        </div>
+        <div id="page5__part2">
+          <div class="elem_client" data-img="./Assets/Image/home-mentions-verizon.webp">
+            <div class="page5__part2__left">
+                <h5>Verizon </h5>
+            </div>
+            <div class="page5__part2__right">
+              <h5>Small Business Feature </h5>
+               <h5> 2021</h5>
+            </div>
+          </div>
+          <div class="elem_client" data-img="./Assets/Image/home-mentions-awwwards-honorablemention.webp">
+
+
+
+            <div class="page5__part2__left">
+              <h5>Awwwards</h5>
+             
             </div>
 
-            <div class="innerbox">
+            <div class="page5__part2__right">
+              <h5>Honorable Mention
+  
+  
+               </h5>
+               <h5> 
+                2023</h5>
+             </div>
+         
+          
+          </div>
+          <div class="elem_client" data-img="./Assets/Image/home-mentions-awwwards-mobile.webp">
 
+            <div class="page5__part2__left">
+              <h5>Awwwards</h5>
+             
             </div>
 
-            <div id="page1">
-                <div>
-                    <h2 class="h2-left">A design studio made</h2>
-                    <h2 class="h2-right">to element your brand</h2>
-                </div>
-                <p>We build brand identities, creative websites, and visual <br>
-                    narratives that showcase the full extent of your
-                    potential.<br>
-                    Based in Washington DC,working with clients world-wide. </p>
-                <video src="./Assets/Video/Duo Reel--Desktop-reduced.mp4" muted
-                    autoplay loop></video>
+            <div class="page5__part2__right">
+              <h5>Mobile Excellence
+
+              
+  
+               </h5>
+               <h5> 
+                2020
+              </h5>
+             </div>
+         
+          
+
+
+
+          </div>
+          <div class="elem_client" data-img="./Assets/Image/home-mentions-mindsparkle.webp">
+
+
+
+            <div class="page5__part2__left">
+              <h5>Mindsparkle Mag</h5>
+             
             </div>
 
-            <div id="page2">
-                <span id="page2__heading">
-                    <div id="Heading__first_line"><p><small
-                                style="font-size: 2rem;">CapabilitiesAT</small>
-                            DUO STUDIO, WE HAVE A</p></div>
-                    <div id="Heading__second_line"><p> PASSION FOR CRAFTING
-                            PERSONALIZED</p></div>
-                    <div id="Heading__third_line"><p> SOLUTIONS,
-                            INCLUDING:</p></div>
+            <div class="page5__part2__right">
+              <h5>Site of the Day
 
-                </span>
-                <div id="page2__Container">
-                    <div id="page2_left">
-                        <div class="elem">
-                            <!-- <img src="./Assets/Image/services__branding@1152.webp" alt=""> -->
-                            <h2>Branding</h2>
-                            <p>Brand Identity, Brand Strategy, Logo <br> Design,
-                                Messaging, Positioning, Art <br> Direction,
-                                Brand Guidelines</p>
-                        </div>
-                        <div class="elem">
-                            <!-- <img src="./Assets/Image/services__branding@1152.webp" alt=""> -->
-                            <h2>Websites</h2>
-                            <p>Web Design, Web Development, UI/UX, <br>
-                                Wireframes, Copywriting, E-Commerce, <br> SEO,
-                                CMS, Analytics/Tracking</p>
-                        </div>
-                        <div class="elem">
-                            <!-- <img src="./Assets/Image/services__branding@1152.webp" alt=""> -->
-                            <h2>Content</h2>
-                            <p>Content Strategy, Graphic Design, <br> Marketing
-                                Design Collateral, Packaging, <br> Print Design,
-                                Illustration, Motion Graphics</p>
-                        </div>
-                    </div>
-                    <div id="page2_right"></div>
-                </div>
+      
+
+              
+  
+               </h5>
+               <h5> 
+                2020
+              </h5>
+             </div>
+         
+          </div>
+          <div class="elem_client" data-img="./Assets/Image/home-mentions-orpetron.webp">
+
+
+            <div class="page5__part2__left">
+              <h5>Orpetron</h5>
+             
             </div>
 
-            <div id="page3">
+            <div class="page5__part2__right">
+              <h5>Site of the Day
 
-                <div id="page3-part1">
-                    <h2>Featured <br>
-                        work
-                    </h2>
-                    <div class="img-wrapper" data-scroll data-scroll-speed="4">
-                        <img
-                            src="https://web.archive.org/web/20240215162227im_/https://duo-studio.co/assets/home/home__mgny-thumbnail.webp"
-                            alt srcset>
-                        <h3>
-                            MGNY
+      
 
-                        </h3>
-                        <p>
+              
+  
+               </h5>
+               <h5> 
+                2020
+              </h5>
+             </div>
+          </div>
+        </div>
+      </div>
 
-                            Brand Strategy, Website, Creative Direction,
-                            Illustration
-                        </p>
+      <footer>
+        <div id="footer__part1">
+<h2>LET'S CREATE AN EXPERIENCE AS <br>
+  REMARKABLE AS YOUR BUSINESS</h2>
+  <div class="circle_big">
+   <h4> get into touch</h4>
+  </div>
+        </div>
+        <div id="footer__part2">
+          <div id="footer_part2_left">
+            <h6>Don't miss out. Stay in the loop.</h6>
+            <form action="">
+              <input type="text" placeholder="Your Email">
+              <button type="button">Subscriber</button>
+              
 
-                    </div>
+            </form>
+            <h2>©2024 Duo Studio | Privacy Policy</h2>
+          </div>
+          <div id="footer_part2_right">
+            <h1>hello@duo-studio.co</h1>
+            <div>
+              <ol>
+                <li>Main Hubs</li>
+                <li>
+                  dc
+                </li>
+                <li>Maryland</li>
+              <li>
+                Virginia
+              </li>             
+             </ol>
 
-                </div>
-                <div id="page3-part2">
-                    <div class="video-wrapper absolute right0" data-scroll data-scroll-speed="2">
-                       <video src="./Assets/Video/projects_madegood-reduced.mp4" muted autoplay loop></video>
-                        <h3>
-                            MGNY
+             <ol>
+              <li>Social
 
-                        </h3>
-                        <p>
-
-                            Brand Strategy, Website, Creative Direction,
-                            Illustration
-                        </p>
-
-                    </div>
-                </div>
+              </li>
+              <li>Instagram</li>
+              <li>LinkedIn</li>
+              <li>Facebook</li>
+             </ol>
             </div>
-        </main>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-                integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script
-                src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-                integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          </div>
+        </div>
+              </footer>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
-            <script src="./Assets/JS/script.js"></script>
-        </body>
-    </html>
+
+    <script src="./Assets/JS/script.js"></script>
+  </body>
+</html>
