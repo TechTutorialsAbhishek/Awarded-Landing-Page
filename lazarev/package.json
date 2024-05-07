@@ -3,5 +3,14 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3"
-  }
+  },
+  "name": "lazarev",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./Assets/CSS/input.css -o ./Assets/CSS/util.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
