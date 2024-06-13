@@ -1,357 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <script src="https://cdn.tailwindcss.com" defer></script> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
-    <link rel="stylesheet" href="./Assets/CSS/util.css" />
-    <link rel="stylesheet" href="./Assets/CSS/responsive.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link
-      href=" https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css "
-      rel="stylesheet" />
-    <title>
-      LAZAREV. 🪀 — Digital Product Design Agency | Award Winning UX & UI Agency
-    </title>
-  </head>
 
-  <body>
-    <nav
-      class="flex w-screen py-10 h-24 items-start lg:hover:h-80 overflow-hidden bg-[#111111]  text-white justify-between font-semibold fixed lg:px-4 xl:px-20 2xl:px-52">
-      <div id="nav-part1"
-        class="w-3/12 md:w-2/12 ml-12 h-fit lg:ml-0 lg:w-1/12">
-        <div class="logo h-fit">
-          <svg
-            fill="none"
-            viewBox="0 0 168 22"
-            class="w-full h-full text-white">
-            <path
-              fill="currentColor"
-              d="M0 0v21.72h16.453v-5.468H6.421V0H0ZM43.437 17.276v4.445h20.878v-5.469H52.586L63.851 4.444V0H43.715v5.468h10.986L43.437 17.276Z"></path>
-            <path
-              fill="currentColor"
-              fill-rule="evenodd"
-              d="M91.025 21.72 82.063 0h-7.815l-8.993 21.72h6.669l1.688-4.22h9.18l1.688 4.22h6.545ZM78.202 6.026l-2.54 6.349h5.08l-2.54-6.349ZM33.675 0l8.962 21.72h-6.545l-1.688-4.22h-9.18l-1.688 4.22h-6.669L25.86 0h7.815Zm-6.4 12.374 2.539-6.349 2.54 6.349h-5.08ZM93.023 21.72V0h10.789c4.926 0 10.084 1.79 10.084 8.335 0 3.308-1.328 5.37-3.273 6.6l4.132 6.786h-7.151l-3.137-5.185c-.219.007-.437.01-.655.01h-4.368v5.175h-6.421Zm9.823-10.518h-3.402V5.437h3.402l.482-.003c1.949-.022 4.24-.047 4.24 2.901 0 2.928-2.28 2.897-4.204 2.871-.177-.002-.35-.004-.518-.004Z"
-              clip-rule="evenodd"></path>
-            <path
-              fill="currentColor"
-              d="M124.321 13.3v3.076h12.509v5.345h-18.868V0h18.466v5.344h-12.107V8.41h10.918v4.89h-10.918ZM146.838 21.72 138.78 0h6.618l5.269 15.003L156.085 0h6.359l-8.089 21.72h-7.517ZM161.719 21.007c.68.662 1.516.993 2.505.993.99 0 1.825-.331 2.505-.993.681-.662 1.021-1.5 1.021-2.513 0-1.055-.34-1.893-1.021-2.514-.68-.641-1.515-.962-2.505-.962-.989 0-1.825.321-2.505.962-.68.62-1.021 1.459-1.021 2.514 0 1.013.341 1.851 1.021 2.513Z"></path>
-          </svg>
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Assets/CSS/style.css" />
+  <link rel="stylesheet" href="./Assets/CSS/util.css" />
+  <link rel="stylesheet" href="./Assets/CSS/responsive.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href=" https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css " rel="stylesheet" />
+  <title>
+    LAZAREV. 🪀 — Digital Product Design Agency | Award Winning UX & UI Agency
+  </title>
+</head>
+
+<body>
+  <nav
+    class="flex w-screen py-10 h-24 items-start lg:hover:h-80  overflow-hidden bg-[#111111]  text-white justify-between font-semibold fixed lg:px-4 xl:px-20 2xl:px-52">
+    <div id="nav-part1" class="w-3/12 md:w-2/12 ml-12 h-fit lg:ml-0 lg:w-1/12">
+      <div class="logo h-fit min-[589px]:ml-7">
+        <svg fill="none" viewBox="0 0 168 22" class="w-full h-full text-white">
+          <path fill="currentColor"
+            d="M0 0v21.72h16.453v-5.468H6.421V0H0ZM43.437 17.276v4.445h20.878v-5.469H52.586L63.851 4.444V0H43.715v5.468h10.986L43.437 17.276Z">
+          </path>
+          <path fill="currentColor" fill-rule="evenodd"
+            d="M91.025 21.72 82.063 0h-7.815l-8.993 21.72h6.669l1.688-4.22h9.18l1.688 4.22h6.545ZM78.202 6.026l-2.54 6.349h5.08l-2.54-6.349ZM33.675 0l8.962 21.72h-6.545l-1.688-4.22h-9.18l-1.688 4.22h-6.669L25.86 0h7.815Zm-6.4 12.374 2.539-6.349 2.54 6.349h-5.08ZM93.023 21.72V0h10.789c4.926 0 10.084 1.79 10.084 8.335 0 3.308-1.328 5.37-3.273 6.6l4.132 6.786h-7.151l-3.137-5.185c-.219.007-.437.01-.655.01h-4.368v5.175h-6.421Zm9.823-10.518h-3.402V5.437h3.402l.482-.003c1.949-.022 4.24-.047 4.24 2.901 0 2.928-2.28 2.897-4.204 2.871-.177-.002-.35-.004-.518-.004Z"
+            clip-rule="evenodd"></path>
+          <path fill="currentColor"
+            d="M124.321 13.3v3.076h12.509v5.345h-18.868V0h18.466v5.344h-12.107V8.41h10.918v4.89h-10.918ZM146.838 21.72 138.78 0h6.618l5.269 15.003L156.085 0h6.359l-8.089 21.72h-7.517ZM161.719 21.007c.68.662 1.516.993 2.505.993.99 0 1.825-.331 2.505-.993.681-.662 1.021-1.5 1.021-2.513 0-1.055-.34-1.893-1.021-2.514-.68-.641-1.515-.962-2.505-.962-.989 0-1.825.321-2.505.962-.68.62-1.021 1.459-1.021 2.514 0 1.013.341 1.851 1.021 2.513Z">
+          </path>
+        </svg>
+      </div>
+    </div>
+    <div id="nav-part2" class="w-fit h-fit flex align-text-top">
+      <div class="md:gap-5 sm:gap-8  xl:text-sm md:text-xs hidden lg:flex w-fit h-fit xl:ml-9">
+        <div class="flex flex-col">
+          <a href class="uppercase font-semibold  font-Nhass-Light">case studies</a>
+          <ol class="font-Nhass-Light">
+            <li>
+              <p>Case Studies</p>
+            </li>
+
+          </ol>
+        </div>
+        <div class="flex flex-col">
+          <a href class="uppercase font-Nhass-Light">area of expertise</a>
+          <ol class="font-Nhass-Light">
+            <li>
+              <p>🔥 AI &ML</p>
+            </li>
+            <li>
+              <p>Fintech</p>
+            </li>
+            <li>
+              <p>Real Estate</p>
+            </li>
+            <li>
+              <p>E-Commerce</p>
+            </li>
+            <li>
+              <p>Web3</p>
+            </li>
+          </ol>
+        </div>
+        <div class="flex flex-col">
+          <a href class="uppercase font-Nhass-Light">ui ux design</a>
+          <ol class="font-Nhass-Light">
+            <li>
+              <p>UX Audit</p>
+            </li>
+            <li>
+              <p>UI Design</p>
+            </li>
+            <li>
+              <p>UI Design</p>
+            </li>
+            <li>
+              <p>UI Research</p>
+            </li>
+          </ol>
+        </div>
+        <div class="flex flex-col">
+          <a href class="uppercase font-Nhass-Light">product design</a>
+          <ol class="font-Nhass-Light">
+            <li>
+              <p>SaaS</p>
+            </li>
+            <li>
+              <p>Web App</p>
+            </li>
+            <li>
+              <p>Mobile App</p>
+            </li>
+            <li>
+              <p>Website Design</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="flex flex-col">
+          <a href class="uppercase font-Nhass-Light">design process</a>
+          <ol class="font-Nhass-Light">
+            <li>
+              <p>MVP</p>
+            </li>
+            <li>
+              <p>Relaunch</p>
+            </li>
+          </ol>
+        </div>
+        <div class="flex flex-col">
+          <a href class="uppercase font-semibold font-Nhass-Light">about agency</a>
+          <ol class="font-Nhass-Light">
+            <li>
+              <p>Our Stories</p>
+            </li>
+            <li>
+              <p>Client's Feedback</p>
+            </li>
+            <li>
+              <p>Carriers</p>
+            </li>
+
+            <li class="2xl:mt-11">
+              <p>News & Article</p>
+            </li>
+          </ol>
         </div>
       </div>
-      <div id="nav-part2" class="w-fit h-fit flex align-text-top">
-        <div
-          class="md:gap-5 sm:gap-8  xl:text-sm md:text-xs hidden lg:flex w-fit h-fit xl:ml-9">
-          <div class="flex flex-col">
-            <a href class="uppercase font-semibold  font-Nhass-Light">case studies</a>
-            <ol class="font-Nhass-Light">
-              <li> <p>Case Studies</p></li>
+    </div>
 
-            </ol>
-          </div>
-          <div class="flex flex-col">
-            <a href class="uppercase font-Nhass-Light">area of expertise</a>
-            <ol class="font-Nhass-Light">
-              <li>
-                <p>🔥 AI &ML</p>
-              </li>
-              <li><p>Fintech</p></li>
-              <li><p>Real Estate</p></li>
-              <li><p>E-Commerce</p></li>
-              <li><p>Web3</p></li>
-            </ol>
-          </div>
-          <div class="flex flex-col">
-            <a href class="uppercase font-Nhass-Light">ui ux design</a>
-            <ol class="font-Nhass-Light">
-              <li><p>UX Audit</p></li>
-              <li><p>UI Design</p></li>
-              <li><p>UI Design</p></li>
-              <li><p>UI Research</p></li>
-            </ol>
-          </div>
-          <div class="flex flex-col">
-            <a href class="uppercase font-Nhass-Light">product design</a>
-            <ol class="font-Nhass-Light">
-              <li><p>SaaS</p></li>
-              <li><p>Web App</p></li>
-              <li><p>Mobile App</p></li>
-              <li><p>Website Design</p></li>
-            </ol>
-          </div>
+    <div id="nav-part3" class="">
+      <button
+        class="xl:px-3 -mt-6 md:py-1 md:px-2 text-lg uppercase flex items-center justify-center w-full h-auto rounded-full lg:rounded-full text-white lg:bg-green-600">
+        <p class="hidden lg:block sm:text-xs 2xl:text-sm">Let's talk</p>
+        <i
+          class="fa-solid fa-pencil lg:ml-10 bg-green-600 lg:bg-transparent p-4 lg:px-0 rounded-full lg:rounded-none"></i>
+        <i class="fa-solid fa-bars p-4 bg-gray-700 rounded-full lg:rounded-none flex" id="bars"></i>
+      </button>
+    </div>
+    <div class="nav-line absolute bottom-0 w-11/12 md:w-9/12  h-0.5 hidden lg:block bg-white"></div>
+  </nav>
+  <main class="bg-[#111111] relative">
+    <div id="page1"
+      class="flex flex-col justify-center  relative min-[978px]:items-center text-white min-[589px]:items-center md:items-start lg:items-center">
+      <div id="page1_top" class=" font-black !font-NhassBold uppercase leading-none   -md:mt-8  min-[600px]:mt-28">
+        <h2
+          class=" text-2xl min-[338px]:text-5xl  min-[338px]:leading-[3rem] min-[600px]:text-5xl font-[1100] mt-40 min-[991px]:text-[5rem]  xl:text-8xl min-[1500px]:text-[8rem] min-[1696px]:text-[8rem]  lg:text-[5rem] font-NHaasExtraBold min-[633px]:mt-40 md:w-full ml-8 ">
 
-          <div class="flex flex-col">
-            <a href class="uppercase font-Nhass-Light">design process</a>
-            <ol class="font-Nhass-Light">
-              <li><p>MVP</p></li>
-              <li><p>Relaunch</p></li>
-            </ol>
-          </div>
-          <div class="flex flex-col">
-            <a href class="uppercase font-semibold font-Nhass-Light">about agency</a>
-            <ol class="font-Nhass-Light">
-              <li><p>Our Stories</p></li>
-              <li><p>Client's Feedback</p></li>
-              <li><p>Carriers</p></li>
+          <span class="w-full block  min-[769px]:inline">
+            AI & ML
+          </span>
+          <span> PR</span>
+          <svg class="c-bttn__morph inline rounded-full bg-green-700" fill="none" viewBox="0 0 131 136">
+            <path class="g-path" data-morph="end" fill="#fff"
+              d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z">
+            </path>
+            <path class="g-path" data-morph="start" fill="#fff"
+              d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
+              data-original="M65.72 109.14c10.08 0 17.76-3.78 23.04-11.34 5.4-7.68 8.1-17.64 8.1-29.88 0-12.24-2.7-22.2-8.1-29.88-5.28-7.68-12.96-11.52-23.04-11.52-9.96 0-17.7 3.84-23.22 11.52-5.4 7.68-8.1 17.64-8.1 29.88 0 12.12 2.7 22.02 8.1 29.7 5.52 7.68 13.26 11.52 23.22 11.52Zm46.08 7.02c-11.64 12.6-27.06 18.9-46.26 18.9s-34.62-6.3-46.26-18.9C7.76 103.56 2 87.48 2 67.92c0-19.56 5.76-35.64 17.28-48.24C30.92 7.08 46.34.78 65.54.78s34.62 6.3 46.26 18.9c11.64 12.6 17.46 28.68 17.46 48.24 0 19.56-5.82 35.64-17.46 48.24Z">
+            </path>
+          </svg>DUCT
+        </h2>
+        <h2
+          class="text-2xl min-[338px]:text-5xl  font-NHaasExtraBold min-[600px]:text-5xl font-[1100]  min-[991px]:text-[5rem]  xl:text-7xl min-[1500px]:text-[8rem] min-[1696px]:text-[8rem]  lg:text-[5rem] text-center  md:w-full ml-8 ">
 
-              <li class="2xl:mt-11"><p>News & Article</p></li>
-            </ol>
-          </div>
-        </div>
-      </div>
 
-      <div id="nav-part3">
-        <button
-          class="xl:px-3 -mt-6 md:py-1 md:px-2 text-lg uppercase flex items-center justify-center w-full h-auto rounded-full lg:rounded-full text-white lg:bg-green-600">
-          <p class="hidden lg:block sm:text-xs 2xl:text-sm">Let's talk</p>
-          <i
-            class="fa-solid fa-pencil lg:ml-10 bg-green-600 lg:bg-transparent p-4 lg:px-0 rounded-full lg:rounded-none"></i>
-          <i
-            class="fa-solid fa-bars p-4 bg-gray-700 rounded-full lg:rounded-none flex"
-            id="bars"></i>
-        </button>
-      </div>
-      <div
-        class="nav-line absolute bottom-0 w-11/12 md:w-9/12  h-0.5 hidden lg:block bg-white"></div>
-    </nav>
-    <main class="bg-[#111111] " data-scroll data-scroll-speed="5">
-      <div
-        id="page1"
-        class="flex flex-col justify-center relative min-[978px]:items-center text-white sm:items-center md:items-start lg:items-center">
-        <div
-          id="page1_top"
-          class=" font-black !font-NhassBold uppercase leading-none md:mt-16 ">
-          <h2 class=" text-5xl min-[338px]:text-7xl mt-40 min-[991px]:text-[5rem]  xl:text-9xl min-[1500px]:text-[9.5rem] min-[1696px]:text-[10rem]  lg:text-8xl  min-[633px]:mt-40 md:w-full ml-8 " >
-            
-            <span class="w-full block min-[758px]:inline"> 
-              AI & ML
-            </span>
-<span> PR</span>
-            <svg
-              class="c-bttn__morph inline rounded-full bg-green-700"
-              fill="none"
-              viewBox="0 0 131 136">
-              <path
-                class="g-path"
-                data-morph="end"
-                fill="#fff"
-                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"></path>
-              <path
-                class="g-path"
-                data-morph="start"
-                fill="#fff"
-                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
-                data-original="M65.72 109.14c10.08 0 17.76-3.78 23.04-11.34 5.4-7.68 8.1-17.64 8.1-29.88 0-12.24-2.7-22.2-8.1-29.88-5.28-7.68-12.96-11.52-23.04-11.52-9.96 0-17.7 3.84-23.22 11.52-5.4 7.68-8.1 17.64-8.1 29.88 0 12.12 2.7 22.02 8.1 29.7 5.52 7.68 13.26 11.52 23.22 11.52Zm46.08 7.02c-11.64 12.6-27.06 18.9-46.26 18.9s-34.62-6.3-46.26-18.9C7.76 103.56 2 87.48 2 67.92c0-19.56 5.76-35.64 17.28-48.24C30.92 7.08 46.34.78 65.54.78s34.62 6.3 46.26 18.9c11.64 12.6 17.46 28.68 17.46 48.24 0 19.56-5.82 35.64-17.46 48.24Z"></path></svg>DUCT
-          </h2>
-          <h2 class="font-extrabold text-5xl min-[1500px]:text-[9.5rem] min-[338px]:text-7xl  min-[991px]:text-[5rem]  xl:text-9xl xl:text-center  lg:text-8xl   md:w-full ml-8 ">
-            
-             
           <span class="w-full block min-[758px]:inline">Design</span>
           <span>agency</span>
-          </h2>
+        </h2>
+      </div>
+      <div id="page1_bottom" class="text-xl md:mb-64">
+        <p
+          class="min-[978px]:text-center   min-[338px]:text-lg  min-[338px]:leading-9 mb-1 w-[319px] md:w-full  lg:font-semibold text-2xl md:text-xl ml-8">
+          We partner with AI & ML businesses, guiding them from series A
+          <br />
+          to series D and beyond with our expertise in
+        </p>
+        <p class="ml-8 leading-[47px] w-[303px] md:w-full md:leading-3">
+          <span>brand design</span>
+          <span>user experience</span>
+          and
+          <span>digital product design</span>.
+        </p>
+
+      </div>
+
+
+    </div>
+    <div id="page2" class="w-screen h-[227vh] font-Nhass-Light lg:h-[150vh] relative flex text-white ">
+      <!-- Logo AutoScroller Start-->
+
+      <div id="page2__Part1">
+        <div id="slider" class="flex absolute top-0 h-15  w-full  lg:-mt-0 ">
+          <div id="Slider__blur_left"
+            class=" flex  items-end justify-end absolute left-0 z-20 w-4/12 h-full min-[978px]:bg-[#111111]">
+            <div class="w-9/12 h-full bg-[#111111]k"></div>
+            <div class="w-3/12 h-full bg-gray-950 blur-2xl opacity-75"></div>
+          </div>
+          <div class="w-4/6  h-full">
+            <div id="slider-in" class="center  items-center justify-center z-10 flex gap-20 h-full">
+
+              <img src="https://lazarev.kiev.ua/la24/awww.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/rd.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/webby.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/fwa.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt>
+
+              <img src="https://lazarev.kiev.ua/la24/awww.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/rd.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/webby.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/fwa.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt>
+              <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt>
+
+            </div>
+
+          </div>
+
+          <div id="Slider__blur_right" class="absolute  flex right-0 z-20 w-4/12 h-full min-[978px]:bg-[#111111]">
+            <div class="w-3/12 h-full bg-gray-950 blur-2xl opacity-75"></div>
+            <div class="w-9/12 h-full bg-[#111111]"></div>
+          </div>
         </div>
-        <div id="page1_bottom" class="text-xl md:mb-64">
-          <p class="min-[978px]:text-center mb-1 w-[409px] md:w-full  lg:font-semibold text-2xl md:text-xl ml-8">
-            We partner with AI & ML businesses, guiding them from series A
-            <br />
-            to series D and beyond with our expertise in
+      </div>
+      <!-- Logo AutoScroller End-->
+
+      <!-- Page 2 Part2 start -->
+      <div id="page2__Part2"
+        class="flex  w-full h-4/5 -mt-40 lg:-mt-0 absolute top-1/4 flex-col lg:flex-row  px-10 lg:px-4 xl:px-20 2xl:px-52">
+
+        <div id="page2_Part2_left"
+          class=" w-full  lg:w-4/6 lg-fit lg:h-full hidden lg:flex justify-between flex-col p-7">
+          <p class=" text-xl lg:text-xl mt-8 lg:mt-14">Exclusive insights into
+            <br>
+            UI/UX and product design
           </p>
-          <p class="ml-8 leading-[47px] w-[303px] md:w-full md:leading-3">
-            <span>brand design</span>
-            <span>user experience</span>
-            and
-            <span>digital product design</span>.
+
+          <p class="w-auto h-fit  lg:mb-72 text-xl mt-16 lg-mt-0 ">Being a design
+            studio at the forefront of digital <br> transformation and product
+            design, we take it <br> upon ourselves to drop some knowledge, share <br>
+            insights, let out insider tips, and put our work on <br> full
+            display
           </p>
-          
         </div>
-    
 
-      </div>
-      <div id="page2"
-        class="w-screen h-[227vh] font-Nhass-Light lg:h-[150vh] relative flex text-white ">
-        <!-- Logo AutoScroller Start-->
-           
-        <div id="page2__Part1">
-          <div id="slider" class="flex absolute top-0 h-15  w-full  lg:-mt-0 ">
-            <div id="Slider__blur_left"
-              class=" flex  items-end justify-end absolute left-0 z-20 w-4/12 h-full min-[978px]:bg-[#111111]">
-              <div class="w-9/12 h-full bg-[#111111]k"></div>
-              <div class="w-3/12 h-full bg-gray-950 blur-2xl opacity-75"></div>
-            </div>
-            <div class="w-4/6  h-full">
-              <div id="slider-in"
-                class="center  items-center justify-center z-10 flex gap-20 h-full">
-
-                <img src="https://lazarev.kiev.ua/la24/awww.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/rd.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/webby.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/fwa.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt>
-
-                <img src="https://lazarev.kiev.ua/la24/awww.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/rd.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/webby.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/fwa.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt>
-                <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt>
-
+        <div id="page2_Part2_right" class=" w-full lg:w-4/6 h-full ">
+          <div class="elem relative">
+            <h2>The Gestalt Principles of Design:
+              How <br> Design Forms Visual Perception</h2>
+            <img src="./Assets/Image/elem_image1.webp" />
+            <div class="flex absolute top-6 right-4">
+              <p>6 min read</p>
+              <div class="arrow_container bg-[#111111] text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
+                <span class="arrow_one w-4 h-6">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="arrow_two mt-2  w-4 h-6 -ml-5 ">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
               </div>
-
-            </div>
-
-            <div id="Slider__blur_right"
-              class="absolute  flex right-0 z-20 w-4/12 h-full min-[978px]:bg-[#111111]">
-              <div class="w-3/12 h-full bg-gray-950 blur-2xl opacity-75"></div>
-              <div class="w-9/12 h-full bg-[#111111]"></div>
             </div>
           </div>
-        </div>
-        <!-- Logo AutoScroller End-->
+          <div class="elem relative">
+            <h2>Effective Design Principles for <br> Cryptocurrency Trading Interfaces</h2>
+            <img src="./Assets/Image/elem_image2.webp" />
+            <div class="flex absolute top-6 right-4">
+              <p>3 min read</p>
 
-        <!-- Page 2 Part2 start -->
-        <div id="page2__Part2"
-          class="flex  w-full h-4/5 -mt-40 lg:-mt-0 absolute top-1/4 flex-col lg:flex-row  px-10 lg:px-4 xl:px-20 2xl:px-52">
-     
-          <div id="page2_Part2_left"
-            class=" w-full  lg:w-4/6 lg-fit lg:h-full flex justify-between flex-col p-7">
-            <p class=" text-xl lg:text-xl mt-8 lg:mt-14">Exclusive insights into
-              <br>
-              UI/UX and product design
-            </p>
-
-            <p class="w-auto h-fit  lg:mb-72 text-xl mt-16 lg-mt-0 ">Being a design
-              studio at the forefront of digital <br> transformation and product
-              design, we take it  <br> upon ourselves to drop some knowledge, share <br>
-              insights, let out insider tips, and put our work on  <br> full
-              display
-            </p>
+              <div class="arrow_container  text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
+                <span class="arrow_one w-4 h-5">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="arrow_two mt-2  w-4 h-5 -ml-5 ">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
           </div>
-          
-          <div id="page2_Part2_right"
-            class=" w-full lg:w-4/6 h-full ">
-            <div class="elem relative">
-              <h2>The Gestalt Principles of Design: 
-                 How <br> Design Forms Visual Perception</h2>
-                 <img src="./Assets/Image/elem_image1.webp"/>
-              <div class="flex absolute top-6 right-4">
-                <p>6 min read</p>
-                <div  class="arrow_container bg-[#111111] text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
-                  <span  class="arrow_one w-4 h-6">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <span   class="arrow_two mt-2  w-4 h-6 -ml-5 ">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </div>
+          <div class="elem relative">
+            <h2 class="mt-6">How to design an AI interface users will <br> trust in 2024?</h2>
+            <img src="./Assets/Image/elem_image3.webp" />
+            <div class="flex absolute top-6 right-4">
+              <p>5 min read</p>
+              <div class="arrow_container  text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
+                <span class="arrow_one w-4 h-7">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="arrow_two mt-2  w-4 h-7 -ml-5 ">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
               </div>
             </div>
-            <div class="elem relative">
-              <h2>Effective Design Principles for <br> Cryptocurrency Trading Interfaces</h2>
-              <img src="./Assets/Image/elem_image2.webp"/>
-              <div class="flex absolute top-6 right-4">
-                <p>3 min read</p>
-
-                <div    class="arrow_container  text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
-                  <span  class="arrow_one w-4 h-5">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <span   class="arrow_two mt-2  w-4 h-5 -ml-5 ">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="elem relative">
-              <h2>How to design an AI interface users will <br> trust in 2024?</h2>
-              <img src="./Assets/Image/elem_image3.webp"/>
-              <div class="flex absolute top-6 right-4">
-                <p>5 min read</p>
-                <div  class="arrow_container  text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
-                  <span  class="arrow_one w-4 h-7">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <span   class="arrow_two mt-2  w-4 h-7 -ml-5 ">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="elem  relative ">
-              <h2>How AI Influences Design and the <br> Reciprocal Impact of UX on AI-Driven <br> Products</h2>
-              <img src="./Assets/Image/elem_image4.webp"/>
-              <div class="flex absolute top-6 right-5">
-                <p class="text-zinc-400">5 min read</p>
-                <div    class="arrow_container text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
-                  <span  class="arrow_one w-4 h-7">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <span   class="arrow_two mt-2  w-4 h-7 -ml-5 ">
-                    <svg  fill="none" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </div>
+          </div>
+          <div class="elem  relative ">
+            <h2>How AI Influences Design and the <br> Reciprocal Impact of UX on AI-Driven <br> Products</h2>
+            <img src="./Assets/Image/elem_image4.webp" />
+            <div class="flex absolute top-6 right-5">
+              <p class="text-zinc-400">5 min read</p>
+              <div class="arrow_container text- w-5 h-6 flex flex-col text-4xl ml-8 overflow-hidden ">
+                <span class="arrow_one w-4 h-7">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="arrow_two mt-2  w-4 h-7 -ml-5 ">
+                  <svg fill="none" viewBox="0 0 15 15">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
               </div>
             </div>
           </div>
         </div>
-        <!-- Page 2 Part2 end -->
+      </div>
+      <!-- Page 2 Part2 end -->
+    </div>
+
+    <div id="page3"
+      class="w-screen  relative h-screen mt-[56vh] min-[320px]:mt-[45vh] min-[571px]:mt-[40vh] xl:mt-[0vh]">
+      <!-- <img src="./Assets/Image/page3_img.webp" alt="" srcset="" class="w-full h-full object-cover"> -->
+      <div id="page3-center"
+        class="left-0% absolute min-[320px]:left-[10%] min-[402px]:left-[15%]  min-[460px]:left-[24%] xl:left-[40%] flex flex-col">
+        <div id="Page3-circle" class="w-[120px] h-[120px]  xl:w-[200px] xl:h-[200px] ">
+          <i class="fa-solid fa-play"></i>
+
+        </div>
+        <button id="page3-btn" class="opacity-0 uppercase bg-white px-4 py-3  mt-5 rounded-full text-sm">watch
+          showreel</button>
+        <div id="play-video-div" class="w-screen absolute  bg-black z-50">
+          <video loop  autoplay muted src="./Assets/Video/la-reel--min.mp4" class="object-cover w-full h-full "></video>
+        </div>
+      </div>
+    </div>
+    <div id="page4"
+      class="w-screen flex max-h-max lg:h-screen bg-white py-24  items-center content-center lg:items-baseline flex-col lg:flex-row">
+      <div id="page4_left" class="w-1/2 h-full flex items-start ml-24 mt-4">
+        <h2 class="lg:text-5xl   flex items-center justify-center font-NhassBold">Success Stories <br> Shaped by Our
+          <br> User Experience <br> Design Agency
+        </h2>
+      </div>
+      <div id="page4_right" class="w-1/2 h-full font-Nhass-Light flex flex-col mr-10">
+        <div class="">
+          <p class="text-base/7 uppercase mb-8 text-slate-400">Partnership mentality</p>
+          <p class="text-[1rem] w-[345px]  xl:text-2xl xl:w-[676px]">Along with taking the lead in designing AI-powered
+            solutions, we embody a
+            partnership mentality. This exact commitment has been the bedrock of our clients’ successes.  When you
+            choose to collaborate with us, we promise to be right where your audience's changing desires meet your
+            ambitious business goals. We don't settle for mediocrity; we strive for excellence in every Figma pixel,
+            every touchpoint, and every UX interaction.</p>
+        </div>
+        <div class="mb-12 mt-6">
+          <p class="text-base/7 uppercase mb-8 text-slate-400">Results</p>
+          <p class="text-[1rem] w-[345px]  xl:text-2xl xl:w-[676px]">That is how we've built 50+ sustainable startup
+            products and helped 400+ brands
+            secure millions in funding, achieve successful acquisitions, and establish themselves as globally recognized
+            companies.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="page5" class="w-screen h-max bg-white flex   gap-6  flex-col ">
+
+      <div class="box_container flex-row flex-wrap ">
+        <div class="box flex  ">
+          <h2 class="box-heading font-Nhass-Light">$500M</h2>
+          <p class="box-para font-Nhass-Light">In funding secured owning to our designs</p>
+          <div class="box-no">/001</div>
+        </div>
+        <div class="box flex  ">
+          <h2 class="box-heading">+1 million</h2>
+          <p class="box-para">Increase in customer base</p>
+          <div class="box-no">/002</div>
+        </div>
+        <div class="box flex  ">
+          <h2 class="box-heading">1 000 000+</h2>
+          <p class="box-para">Of active marketplace users</p>
+          <div class="box-no">/003</div>
+        </div>
+
+
+        <div class="box flex  ">
+          <h2 class="box-heading font-Nhass-Light">25 million</h2>
+          <p class="box-para font-Nhass-Light">Monthly E-commerce visits</p>
+          <div class="box-no">/004</div>
+        </div>
+        <div class="box flex  ">
+          <h2 class="box-heading">+300%</h2>
+          <p class="box-para">Increase in sign-up conversion rate</p>
+          <div class="box-no">/005</div>
+        </div>
+        <div class="box flex  ">
+          <h2 class="box-heading">+42%</h2>
+          <p class="box-para">Increase in the app’s retention rate</p>
+          <div class="box-no">/006</div>
+
+
+        </div>
+
+
+
       </div>
 
-      <div id="page3" class="w-screen h-screen " data-scroll>
-        <!-- <img src="./Assets/Image/page3_img.webp" alt="" srcset="" class="w-full h-full object-cover"> -->
-        <div id="page3-center">
-          <div id="Page3-circle">
-            <i class="fa-solid fa-play"></i>
+    </div>
+
+
+    <div id="page6" class="w-screen  h-[300vh] lg:h-[210vh] bg-white   flex flex-col  gap-6">
+
+      <div id="page6-part1" class="w-full items-center justify-end px-28 h-fit flex mt-36 text-wrap">
+        <div class="w-3/4 h-fit">
+          <p class="float-left w-44 mt-4 h-12 ">
+            Featured digital
+            <br>
+            design projects
+          </p>
+          <h3 class="h-3/4  text-4xl ">Our portfolio encompasses a wide range of digital designs essential for
+            the growth of modern businesses. From B2B SaaS and B2C mobile apps to marketing design for promotions, we
+            display our work created for early-stage startups and enterprises at various stages of their growth.</h3>
+
+
+        </div>
+
+      </div>
+      <div id="page6-part2" class="flex flex-col lg:flex-row">
+        <div  class="elem1  w-full  lg:w-2/6 h-fit lg:h-[70vh] flex gap-2  flex-col relative">
+          <div class="line absolute top-7 left-24 h-[1px] w-3/5 bg-gray-400" ></div>
+          <div class="heading_box mt-10  flex gap-2 items-center  ml-24 ">
+            <h2 class="text-3xl">Accern. Rhea</h2>
+            <div class="arrow_container   w-5 h-full  flex flex-col text-4xl ml-8 overflow-hidden ">
+              <span class="arrow_one w-4 h-4 mt-7">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="arrow_two mt-2  w-4 h-4 -ml-5 ">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </div>
+
+
+
+
+
 
           </div>
+
+          <div class="">
+            
+              <p class="w-4/6 mt-16 ml-24 text-xl text-gray-800">Founded by Accern, a front-runner in No-Code NLP, Rhea stands as a personalized AI Associate designed to streamline FinTech workflows.</p>
+         
+          </div>
+        </div>
+        <div  class="elem2 h-[70vh] w-full lg:w-4/6 flex items-center justify-center relative ">
+          <div class="circle z-40 absolute"></div>
+          <video loop muted  src="./Assets/Video/accern-rhea-cover-big.mp4" class="h-11/12 absolute z-10 object-contain  w-11/12 mr-24"></video>
+          <img src="./Assets/Image/af360d0d-9f8c-4e81-b986-1c8d20603ec4.webp" alt="" srcset="" class="h-11/12 absolute z-10 object-contain  w-11/12  mr-24">
         </div>
       </div>
-      <div id="page4" class="w-screen flex h-screen bg-white py-24">
-        <div id="page4_left" class="w-1/2 h-full">
-          <h2 class="lg:text-6xl   flex items-center justify-center font-NhassBold">Success Stories <br> Shaped by Our <br> User Experience <br> Design Agency</h2>
+      <div id="page6-part3" class="flex flex-col lg:flex-row">
+        <div  class="elem1 lg:w-2/6 h-fit lg:h-[70vh] flex gap-2  flex-col relative">
+          <div class="line absolute top-7 left-24 h-[1px] w-3/5 bg-gray-400" ></div>
+          <div class="heading_box mt-10 flex gap-2 items-center  ml-24 ">
+            
+            <h2 class="text-3xl ">Accern. Rhea</h2>
+            <div class="arrow_container   w-5 h-full  flex flex-col text-4xl ml-8 overflow-hidden ">
+              <span class="arrow_one w-4 h-4 mt-7">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="arrow_two mt-2  w-4 h-4 -ml-5 ">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </div>
+
+
+
+
+
+
+          </div>
+
+          <div class="">
+            
+              <p class="w-4/6 mt-16 ml-24 text-xl text-gray-800">Founded by Accern, a front-runner in No-Code NLP, Rhea stands as a personalized AI Associate designed to streamline FinTech workflows.</p>
+         
+          </div>
         </div>
-        <div id="page4_right" class="w-1/2 h-full bg-green-600 font-Nhass-Light flex flex-col">
-<div class="">
-  <p class="text-2xl mb-12">Partnership mentality</p>
-  <p class="text-2xl w-[676px]">Along with taking the lead in designing AI-powered solutions, we embody a partnership mentality. This exact commitment has been the bedrock of our clients’ successes.  When you choose to collaborate with us, we promise to be right where your audience's changing desires meet your ambitious business goals. We don't settle for mediocrity; we strive for excellence in every Figma pixel, every touchpoint, and every UX interaction.</p>
-</div>
-<div class="">
-  <p class="">Results</p>
-  <p class="text-2xl w-[676px]">That is how we've built 50+ sustainable startup products and helped 400+ brands secure millions in funding, achieve successful acquisitions, and establish themselves as globally recognized companies.</p>
-</div>
+        <div  class="elem2 h-[70vh] w-full lg:w-4/6 flex items-center justify-center relative">
+          <div class="circle z-40 absolute flex items-center">
+            <span class="uppercase mt-10 p-5 text-sm text-white font-bold"><p>View </p>
+            <p>Case study</p>
+            </span>
+          </div>
+          <video loop  muted  src="./Assets/Video/afrotech-cover-big.mp4" class="h-11/12 absolute z-10 object-contain  w-11/12 mr-24"></video>
+          <img src="./Assets/Image/339f697a-3cf8-4268-83b4-aeb63d7fb4e7.webp" alt="" srcset="" class="h-11/12 absolute z-10 object-contain  w-11/12 mr-24">
         </div>
       </div>
 
-    </main>
-   
+      
+
+    </div>
+
+    <div id="page7" class="h-screen bg-white  w-screen flex relative">
+      <div id="page7_box_Container" class="flex h-full w-4/6 gap-20  absolute right-20">
+        <div class="page7_box1 w-3/6 h-5/6 flex flex-col relative">
+          <div class="heading_box mt-0 flex gap-2 items-center  ml-0 ">
+            
+            <h2 class="text-4xl ">Blockbeat</h2>
+            <div class="arrow_container   w-5 h-full  flex flex-col text-4xl ml-8 overflow-hidden ">
+              <span class="arrow_one w-4 h-4 mt-7">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="arrow_two mt-2  w-4 h-4 -ml-5 ">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </div>
+
+
+
+        
+
+
+          </div>
+       
+
+            <p class="text-lg absolute left-0 top-1/4 opacity-0  ease-in-out">AI-powered crypto trading terminal that provides <br> traders with continuously updated, streamlined, and <br> distilled data throughout the day.</p>
+            <video src="./Assets/Video/blockbeat-cover-small.mp4" loop muted autoplay class="absolute bottom-0 left-0 h-4/5 w-full object-cover "></video>
+
+        
+        </div>
+        <div class="page7_box2 w-3/6 h-5/6  flex flex-col relative">
+          <div class="heading_box mt-0 flex gap-2 items-center  ml-0 ">
+            
+            <h2 class="text-4xl ">Blockbeat</h2>
+            <div class="arrow_container   w-5 h-full  flex flex-col text-4xl ml-8 overflow-hidden ">
+              <span class="arrow_one w-4 h-4 mt-7">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="arrow_two mt-2  w-4 h-4 -ml-5 ">
+                <svg fill="none" viewBox="0 0 15 15">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M10.125 3.153H1.961V1H13.8v11.839h-2.152V4.675L2.722 13.6 1.2 12.078l8.925-8.925Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </div>
+
+
+
+        
+
+
+          </div>
+       
+
+            <p class="text-lg absolute left-0 top-1/4 opacity-1 ease-in-out">Pika AI is a new and better search engine that harnesses AI technology and helps people find the most relevant and interesting information from across the web.</p>
+            <video src="https:///lazarev.kiev.ua/cases/la24/pika-cover-small.mp4" loop muted autoplay class="absolute bottom-0 left-0 h-1/2 w-full object-cover "></video>
+
+        
+        </div>
+      </div>
+  
+    </div>
+
+    <div id="page8" class="bg-black text-white w-screen h-[250vh] relative">
+
+       <div id="page8_part1" class="w-full h-1/4 flex items-center justify-center relative">
+        <h2 class="text-6xl text-white font-black font-Nhass-Light">
+          Digital Product<br>Design Services and<br>Solutions We Offer
+        </h2>
+<div class="line w-2/3 h-[1px] bg-white absolute bottom-0 "></div>
+       </div>
+       <div id="page8_part2" class="w-full h-1/4 bg-red-500 ">
+        <div class="h-full w-1/3 bg-pink-600">
+          <button class="bg-green-600 p-4 flex">
+            <div class="">
+              <p class="text-base">B</p>
+              <p class="text-base">E</p>
+              <p class="text-base">C</p>
+              <p class="text-base">O</p>
+              <p class="text-base">M</p>
+              <p class="text-base">E</p>
+              <p class="text-base">A</p>
+              <p class="text-base">C</p>
+              <p class="text-base">L</p>
+              <p class="text-base">I</p>
+              <p class="text-base">E</p>
+              <p class="text-base">N</p>
+               <p>T</p>
+            </div>
+          </button>
+        </div>
+       </div>
+       <div id="page8_part3" class="w-full"></div>
+
+
+    </div>
+  </main>
+
 
 
   </main>
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-        <script
-        src=" https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js "></script>
-        <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
-   
-        <script src="./Assets/JS/script.js" defer></script>
-    </body>
-  </html>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <script src="./Assets/JS/script.js" defer></script>
+</body>
 
-
-
+</html>

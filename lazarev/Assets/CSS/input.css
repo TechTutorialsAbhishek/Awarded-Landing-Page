@@ -20,6 +20,11 @@
 }
 
 
-.font-NhassBold{
+@font-face {
   font-family: NHaasBold;
+  src: url('../Fonts/NHaasGroteskTXPro-55Rg.ttf');
+}
+
+.font-NHaasExtraBold{
+  font-family: NHaasExtraBold;
 }
